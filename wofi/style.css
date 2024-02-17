@@ -1,7 +1,7 @@
 window {
     margin: 0px;
-    border: 5px solid #00ff99;
-    background-color: #00ff99;
+    border: 5px;
+    background: linear-gradient(90deg, #33ccff, #00ff99)
 }
 
 #input {
@@ -23,7 +23,7 @@ window {
 }
 
 #inner-box {
-    margin: 4px;
+    margin: 0;
     border: 10px solid #000000;
     color: #f2f2f2;
     font-weight: bold;
@@ -31,7 +31,7 @@ window {
 }
 
 #outer-box {
-    margin: 0px;
+    margin: 1px;
     border: none;
     background-color: #000000;
 }
@@ -66,5 +66,5 @@ window {
 #entry:selected {
     margin: 0px 0px;
     border: none;
-    background: linear-gradient(90deg, #33ccff, #00ff99);
+    background: linear-gradient(90deg, #33ccff, #000000);
 }
