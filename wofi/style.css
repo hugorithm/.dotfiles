@@ -1,7 +1,7 @@
 window {
     margin: 0px;
-    border: 5px solid #1e1e2e;
-    background-color: #cdd6f4;
+    border: 5px solid #00ff99;
+    background-color: #00ff99;
 }
 
 #input {
@@ -9,31 +9,31 @@ window {
     margin: 4px;
     padding-left: 20px;
     border: none;
-    color: #cdd6f4;
+    color: #f2f2f2;
     font-weight: bold;
-    background-color: #1e1e2e;
+    background-color: #000000;
    	outline: none;
     margin: 10px;
     margin-bottom: 2px;
 }
 
 #input:focus {
-    border: 0px solid #1e1e2e;
+    border: 0px solid #33ccff;
     margin-bottom: 0px;
 }
 
 #inner-box {
     margin: 4px;
-    border: 10px solid #1e1e2e;
-    color: #cdd6f4;
+    border: 10px solid #000000;
+    color: #f2f2f2;
     font-weight: bold;
-    background-color: #1e1e2e;
+    background-color: #000000;
 }
 
 #outer-box {
     margin: 0px;
     border: none;
-    background-color: #1e1e2e;
+    background-color: #000000;
 }
 
 #scroll {
@@ -43,7 +43,7 @@ window {
 }
 
 #img:selected {
-    background-color: #89b4fa;
+    background-color: transparent;
 }
 
 #img {
@@ -51,10 +51,10 @@ window {
 }
 
 #text:selected {
-    color: #cdd6f4;
+    color: #000000;
     margin: 0px 0px;
     border: none;
-    background-color: #89b4fa;
+    background-color: transparent;
 }
 
 #entry {
@@ -66,5 +66,5 @@ window {
 #entry:selected {
     margin: 0px 0px;
     border: none;
-    background-color: #89b4fa;
+    background: linear-gradient(90deg, #33ccff, #00ff99);
 }
