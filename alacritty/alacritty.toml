@@ -9,6 +9,10 @@ size = 12
 family = "FiraCode Nerd Font"
 style = "Regular"
 
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
 [cursor]
 style = { shape = "Block", blinking = "Always" }
 blink_interval = 600
