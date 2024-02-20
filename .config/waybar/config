@@ -1,13 +1,57 @@
 {
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["battery", "clock"],
+    "modules-right": [
+        "network",
+        "temperature",
+        "memory",
+        "cpu",
+        "battery",
+        "pulseaudio",
+        "clock"
+    ],
     "sway/window": {
         "max-length": 50
+    },
+    "network": {
+      "interface": "enp4s0",
+      "tooltip-format-ethernet": "{ifname} ",
+      "interval": 2,
+      "format": " {bandwidthDownBits}  {bandwidthUpBits}",
+    },
+    "temperature": {
+      "format": "{icon} {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "critical-threshold": 80,
+      "format-icons": ["", "", ""]
+    },
+    "memory": {
+      "format": " {}%",
+      "tooltip": "false"
+    },
+    "cpu": {
+      "format": " {usage}%",
+      "tooltip": "false"
     },
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon}",
+      "format-muted": "",
+      "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": ["", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "pavucontrol"
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
