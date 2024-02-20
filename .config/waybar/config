@@ -19,7 +19,7 @@
         "hyprland/window",
     ],
     "tray": {
-        "icon-size": 24,
+        "icon-size": 15,
         "spacing": 10
     },
     "hyprland/workspaces": {
