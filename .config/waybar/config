@@ -22,6 +22,15 @@
         "icon-size": 15,
         "spacing": 10
     },
+    "hyprland/window": {
+      "format": " {}",
+      "rewrite": {
+          "nvim (.*)": "<span color=\"#57A143\"></span>  $1",
+          "nvim": "<span color=\"#57A143\">  Neovim</span> ",
+          "alacritty (.*)": "<span color=\"#ffffff\"></span>  $1",
+      },
+      "separate-outputs": false
+    },
     "hyprland/workspaces": {
       "format": "{icon}",
       "format-icons": {
