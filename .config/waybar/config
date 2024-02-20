@@ -25,25 +25,25 @@
     "hyprland/workspaces": {
       "format": "{icon}",
       "format-icons": {
-        "1": "󰲠",
-        "2": "󰲢",
-        "3": "󰲤",
-        "4": "󰲦",
-        "5": "󰲨",
-        "6": "󰲪",
-        "7": "󰲬",
-        "8": "󰲮",
-        "9": "󰲰",
-        "10": "󰿬",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": "",
         "active": "",
         "default": ""
       }
     },
     "network": {
       "interface": "enp4s0",
-      "tooltip-format-ethernet": "{ifname} ",
+      "tooltip-format-ethernet": "{ifname}    {bandwidthDownBits}  {bandwidthUpBits}",
       "interval": 2,
-      "format": " {bandwidthDownBits}  {bandwidthUpBits}",
+      "format": "",
     },
     "temperature": {
       "format": "{icon} {temperatureC}°C",
@@ -69,8 +69,8 @@
       "format-muted": "",
       "format-icons": {
           "headphone": "",
-          "hands-free": "",
-          "headset": "",
+          "hands-free": "",
+          "headset": "",
           "phone": "",
           "portable": "",
           "car": "",

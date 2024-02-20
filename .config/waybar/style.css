@@ -6,7 +6,7 @@
   padding: 0;
 }
 #waybar {
-  background: rgba(0, 0, 0 , 0.3);
+  background: rgba(0, 0, 0 , 0.8);
   color: #eeeeef;
   font-size: 14px;
   font-family: "FiraCode Nerd Font";
@@ -65,11 +65,10 @@
 }
 
 #network {
-  color: #c678dd;
-  min-width: 200px;
+  color: #eeeeef;
 }
 
 #clock {
-  color: #fff;
+  color: #eeeeef;
   margin-left: 8px;
 }
