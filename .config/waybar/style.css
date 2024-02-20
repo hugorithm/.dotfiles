@@ -6,11 +6,10 @@
   padding: 0;
 }
 #waybar {
-  background: rgba(0, 0, 0 , 0.0);
+  background: rgba(0, 0, 0 , 0.3);
   color: #eeeeef;
   font-size: 14px;
   font-family: "FiraCode Nerd Font";
-  border-bottom: 1px solid #808080;
 }
 
 #workspaces button {
