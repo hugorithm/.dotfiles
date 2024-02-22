@@ -21,6 +21,10 @@
   color: #33ccff;
 }
 
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
 #cpu,
 #temperature,
 #memory,
