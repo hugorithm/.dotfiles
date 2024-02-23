@@ -79,6 +79,7 @@
       "on-click": "pavucontrol"
     },
     "clock": {
-        "format": "{:%a, %d/%m/%Y %H:%M}"
+        "interval": 1,
+        "format": "{:%a, %d/%m/%Y %H:%M:%S}"
     }
 }
