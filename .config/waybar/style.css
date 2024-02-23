@@ -34,7 +34,6 @@
 #pulseaudio,
 #network {
   padding: 4px 8px;
-  margin: 0px 4px;
 }
 
 #window {
@@ -57,15 +56,15 @@
 }
 
 #cpu {
-  color: #61afef;
+  color: #eeeeef;
 }
 
 #temperature {
-  color: #98c379;
+  color: #eeeeef;
 }
 
 #memory {
-  color: #e5c07b;
+  color: #eeeeef;
 }
 
 #network {
@@ -74,5 +73,4 @@
 
 #clock {
   color: #eeeeef;
-  margin-left: 8px;
 }
