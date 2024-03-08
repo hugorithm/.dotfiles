@@ -196,7 +196,7 @@
 
 	padding-left = 35%
 	padding-top = 35%
-	result-spacing = 25
+	result-spacing = 15
 	num-results = 5
 	font = monospace
 
