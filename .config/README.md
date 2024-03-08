@@ -1,3 +1,0 @@
-### hugorithm's dotfiles
-
-
