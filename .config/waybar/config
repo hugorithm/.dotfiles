@@ -62,8 +62,7 @@
       "on-click": "pavucontrol"
     },
     "clock": {
-        "interval": 1,
-        "format": "{:%a, %d/%m/%Y %H:%M:%S}",
+        "format": "{:%d/%m/%Y %H:%M}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
