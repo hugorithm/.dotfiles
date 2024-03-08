@@ -349,6 +349,7 @@ require('lazy').setup({
       -- }
       -- vim.cmd.colorscheme 'rose-pine'
       require('gruvbox').setup {
+        terminal_colors = true,
         italic = {
           strings = false,
           emphasis = false,
