@@ -356,18 +356,6 @@ require('lazy').setup({
       --   },
       -- }
       -- vim.cmd.colorscheme 'rose-pine'
-      require('gruvbox').setup {
-        terminal_colors = true,
-        bold = true,
-        italic = {
-          strings = false,
-          emphasis = false,
-          comments = false,
-          operators = false,
-          folds = false,
-        },
-        transparent_mode = false,
-      }
       vim.cmd.colorscheme 'gruvbox'
 
       -- You can configure highlights by doing something like
