@@ -341,6 +341,7 @@ require('lazy').setup({
 
   {
     -- 'rose-pine/neovim',
+    -- 'rebelot/kanagawa.nvim',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
@@ -356,6 +357,29 @@ require('lazy').setup({
       --   },
       -- }
       -- vim.cmd.colorscheme 'rose-pine'
+
+      -- require('kanagawa').setup {
+      --   compile = false, -- enable compiling the colorscheme
+      --   undercurl = true, -- enable undercurls
+      --   commentStyle = { italic = false },
+      --   functionStyle = {},
+      --   keywordStyle = { italic = false },
+      --   statementStyle = { bold = true },
+      --   typeStyle = {},
+      --   transparent = true, -- do not set background color
+      --   dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+      --   terminalColors = true, -- define vim.g.terminal_color_{0,17}
+      --   overrides = function(colors) -- add/modify highlights
+      --     return {}
+      --   end,
+      --   theme = 'wave', -- Load "wave" theme when 'background' option is not set
+      --   background = { -- map the value of 'background' option to a theme
+      --     dark = 'wave', -- try "dragon" !
+      --     light = 'lotus',
+      --   },
+      -- }
+      -- vim.cmd.colorscheme 'kanagawa'
+
       vim.cmd.colorscheme 'gruvbox'
 
       -- You can configure highlights by doing something like
