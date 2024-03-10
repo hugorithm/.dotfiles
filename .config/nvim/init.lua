@@ -341,9 +341,9 @@ require('lazy').setup({
 
   {
     -- 'rose-pine/neovim',
-    -- 'morhetz/gruvbox',
     -- 'rebelot/kanagawa.nvim',
-    'gruvbox-material',
+    -- 'wincent/base16-nvim',
+    'sainnhe/gruvbox-material',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
@@ -370,7 +370,7 @@ require('lazy').setup({
       --   overrides = function(colors) -- add/modify highlights
       --     return {}
       --   end,
-      --   theme = 'draon', -- Load "wave" theme when 'background' option is not set
+      --   theme = 'wave', -- Load "wave" theme when 'background' option is not set
       --   background = { -- map the value of 'background' option to a theme
       --     dark = 'dragon', -- try "dragon" !
       --     light = 'lotus',
@@ -378,9 +378,8 @@ require('lazy').setup({
       -- }
       -- vim.cmd.colorscheme 'kanagawa'
 
-      -- vim.cmd.colorscheme 'gruvbox'
-
       vim.cmd.colorscheme 'gruvbox-material'
+      -- vim.cmd.colorscheme 'base16-default-dark'
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
     end,
