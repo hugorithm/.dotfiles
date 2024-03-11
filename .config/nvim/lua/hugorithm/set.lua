@@ -29,7 +29,9 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = '80'
 
+-- preserve box cursor in insert mode
 vim.opt.guicursor = ''
+
 vim.opt.mouse = 'a'
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
