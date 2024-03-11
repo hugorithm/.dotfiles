@@ -378,6 +378,8 @@ require('lazy').setup({
       -- }
       -- vim.cmd.colorscheme 'kanagawa'
 
+      vim.g.gruvbox_material_background = 'hard'
+      vim.g.gruvbox_material_foreground = 'original'
       vim.cmd.colorscheme 'gruvbox-material'
       -- vim.cmd.colorscheme 'base16-default-dark'
       -- You can configure highlights by doing something like
