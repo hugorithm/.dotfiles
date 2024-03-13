@@ -1,2 +1,2 @@
-require("hugorithm.remap")
-require("hugorithm.set")
+require 'hugorithm.remap'
+require 'hugorithm.set'
