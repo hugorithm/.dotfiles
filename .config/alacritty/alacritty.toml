@@ -24,5 +24,5 @@ opacity = 0.8
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/gruvbox_dark_custom.toml"
+    "~/.config/alacritty/themes/themes/kanagawa_wave.toml"
 ]
