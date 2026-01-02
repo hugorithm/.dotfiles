@@ -348,11 +348,11 @@ require('lazy').setup({
         -- No, but seriously. Please read `:help ins-completion`, it is really good!
         mapping = cmp.mapping.preset.insert {
           -- Select the [n]ext item
-          ['<C-j>'] = cmp.mapping.select_next_item(),
+          ['<Tab>'] = cmp.mapping.select_next_item(),
           -- Select the [p]revious item
-          ['<C-k>'] = cmp.mapping.select_prev_item(),
+          ['<S-Tab>'] = cmp.mapping.select_prev_item(),
 
-          ['<Tab>'] = cmp.mapping.confirm { select = true },
+          ['<C-y>'] = cmp.mapping.confirm { select = true },
 
           ['<C-Space>'] = cmp.mapping.complete {},
 
@@ -386,9 +386,9 @@ require('lazy').setup({
 
   {
     -- 'rose-pine/neovim',
-    -- 'rebelot/kanagawa.nvim',
+    'rebelot/kanagawa.nvim',
     -- 'wincent/base16-nvim',
-    'sainnhe/gruvbox-material',
+    -- 'sainnhe/gruvbox-material',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
@@ -401,32 +401,32 @@ require('lazy').setup({
       -- }
       -- vim.cmd.colorscheme 'rose-pine'
 
-      -- require('kanagawa').setup {
-      --   compile = false, -- enable compiling the colorscheme
-      --   undercurl = true, -- enable undercurls
-      --   commentStyle = { italic = false },
-      --   functionStyle = {},
-      --   keywordStyle = { italic = false },
-      --   statementStyle = { bold = true },
-      --   typeStyle = {},
-      --   transparent = false, -- do not set background color
-      --   dimInactive = false, -- dim inactive window `:h hl-NormalNC`
-      --   terminalColors = true, -- define vim.g.terminal_color_{0,17}
-      --   overrides = function(colors) -- add/modify highlights
-      --     return {}
-      --   end,
-      --   theme = 'wave', -- Load "wave" theme when 'background' option is not set
-      --   background = { -- map the value of 'background' option to a theme
-      --     dark = 'dragon', -- try "dragon" !
-      --     light = 'lotus',
-      --   },
-      -- }
-      -- vim.cmd.colorscheme 'kanagawa'
+      require('kanagawa').setup {
+        compile = false, -- enable compiling the colorscheme
+        undercurl = true, -- enable undercurls
+        commentStyle = { italic = false },
+        functionStyle = {},
+        keywordStyle = { italic = false },
+        statementStyle = { bold = true },
+        typeStyle = {},
+        transparent = true, -- do not set background color
+        dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+        terminalColors = true, -- define vim.g.terminal_color_{0,17}
+        overrides = function(colors) -- add/modify highlights
+          return {}
+        end,
+        theme = 'wave', -- Load "wave" theme when 'background' option is not set
+        background = { -- map the value of 'background' option to a theme
+          dark = 'wave', -- try "dragon" !
+          light = 'lotus',
+        },
+      }
+      vim.cmd.colorscheme 'kanagawa'
 
-      vim.g.gruvbox_material_background = 'hard'
-      vim.g.gruvbox_material_foreground = 'original'
-      vim.g.gruvbox_material_transparent_background = '0'
-      vim.cmd.colorscheme 'gruvbox-material'
+      -- vim.g.gruvbox_material_background = 'hard'
+      -- vim.g.gruvbox_material_foreground = 'original'
+      -- vim.g.gruvbox_material_transparent_background = '0'
+      -- vim.cmd.colorscheme 'gruvbox-material'
       -- vim.cmd.colorscheme 'base16-default-dark'
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
