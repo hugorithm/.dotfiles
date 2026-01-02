@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias vim=nvim
+alias ls='exa -la'
+alias la='exa -a'
+
 
 # Direnv
 eval "$(direnv hook zsh)"
