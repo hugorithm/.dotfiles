@@ -103,9 +103,26 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias vim=nvim
-alias ls='exa -la'
-alias la='exa -a'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
 
+alias ls="exa -l --group-directories-first"
+alias la="exa -la --group-directories-first"
+alias vim="nvim"
+alias kb="kubectl"
+alias tf="terraform"
+
+alias rm="rm -v"
+alias mv="mv -v"
+alias cp="cp -v"
+alias py='python'
+alias rmdir="rmdir -v"
+alias oldvim="/bin/vim"
+alias pyenv="source .env/bin/activate"
+alias sudoers='sudo EDITOR=nvim visudo'
+
+alias uuid='cat /proc/sys/kernel/random/uuid'
+alias ip='ip --color=always'
 
 # Direnv
 eval "$(direnv hook zsh)"
