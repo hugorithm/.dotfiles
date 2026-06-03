@@ -106,8 +106,8 @@ alias vim=nvim
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 
-alias ls="exa -l --group-directories-first"
-alias la="exa -la --group-directories-first"
+alias ls="eza -l --group-directories-first"
+alias la="eza -la --group-directories-first"
 alias vim="nvim"
 alias kb="kubectl"
 alias tf="terraform"
